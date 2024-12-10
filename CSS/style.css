@@ -1,3 +1,4 @@
+/* Task 1 */
 body {
     margin: 0;
     padding: 0;
@@ -57,3 +58,74 @@ body {
     object-fit: cover;
     transition: transform 0.3s ease-in-out; 
   }
+
+/* Task 2 */
+
+.tasks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.feedback-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #4E75FF;
+    color: white;
+    font-size: 15px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: auto;
+    margin-left: auto;
+}
+
+input[type="email"]:hover, textarea:hover {
+    border: 2px solid #007bff;
+}
+
+input[type="email"]:focus, textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+button[type="submit"]:hover {
+    background-color: #4459A2;
+}
+
+button[type="submit"]:active {
+    background-color: #003f7f;
+}
